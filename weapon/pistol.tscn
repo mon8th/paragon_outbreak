@@ -56,11 +56,10 @@ size_flags_vertical = 8
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
 texture_filter = 5
-position = Vector2(9, -48)
-scale = Vector2(1.0925926, 1.0722222)
+position = Vector2(24.999985, -235.00003)
+scale = Vector2(3.0115852, 2.9845192)
 sprite_frames = SubResource("SpriteFrames_suq3v")
-animation = &"shoot"
-frame = 2
+animation = &"idle"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_s4alw")
