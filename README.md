@@ -87,3 +87,6 @@ cd paragon_outbreak
 
 # Open with Godot Engine 4.5.1 or later
 ```
+
+<img width="1416" height="828" alt="image" src="https://github.com/user-attachments/assets/cfaad3f4-c770-46e3-bf1c-9f241386b2c2" />
+
