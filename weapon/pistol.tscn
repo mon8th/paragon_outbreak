@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://ddr5dhsugnh2k"]
+
+[ext_resource type="Script" uid="uid://bpmc68x6ydv80" path="res://script/pistol.gd" id="1_s4alw"]
+[ext_resource type="Texture2D" uid="uid://di03kiwu1r35u" path="res://weapon/weapon_sprite/Shoot1.png" id="2_s4alw"]
+[ext_resource type="Texture2D" uid="uid://yo8vxpqt55yg" path="res://weapon/weapon_sprite/Shoot2.png" id="3_3k1oi"]
+[ext_resource type="Texture2D" uid="uid://etkfqu5sxsln" path="res://weapon/weapon_sprite/Shoot3.png" id="4_mep3e"]
+[ext_resource type="Texture2D" uid="uid://ch8u5yoer533e" path="res://weapon/weapon_sprite/Shoot4.png" id="5_cxl52"]
+[ext_resource type="AudioStream" uid="uid://l5oh4aheq8ha" path="res://weapon/weapon_sound/HG - Raw - Shoot - Variation 2 - 04.mp3" id="6_s4alw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_suq3v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_cxl52")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_s4alw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3k1oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mep3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cxl52")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[node name="pistol" type="Node3D"]
+script = ExtResource("1_s4alw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/Control"]
+texture_filter = 5
+position = Vector2(9, -48)
+scale = Vector2(1.0925926, 1.0722222)
+sprite_frames = SubResource("SpriteFrames_suq3v")
+animation = &"shoot"
+frame = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_s4alw")
