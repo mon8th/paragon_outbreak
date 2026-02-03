@@ -77,16 +77,7 @@ Reach the escape point in the lower level lobby, survive the final zombie encoun
 - **Language:** GDScript
 - **Rendering:** Raycasting (2.5D perspective)
 
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/mon8th/paragon_outbreak.git
-
-# Navigate to project directory
-cd paragon_outbreak
-
-# Open with Godot Engine 4.5.1 or later
-```
-
+## AI
+- **Chatgpt
 <img width="1416" height="828" alt="image" src="https://github.com/user-attachments/assets/cfaad3f4-c770-46e3-bf1c-9f241386b2c2" />
 
