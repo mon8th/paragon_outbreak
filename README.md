@@ -79,5 +79,6 @@ Reach the escape point in the lower level lobby, survive the final zombie encoun
 
 ## AI
 - **Chatgpt
-<img width="1416" height="828" alt="image" src="https://github.com/user-attachments/assets/cfaad3f4-c770-46e3-bf1c-9f241386b2c2" />
+<img width="1468" height="817" alt="image" src="https://github.com/user-attachments/assets/5b83823c-0839-4ba2-9247-fc5a521f76ce" />
+
 
